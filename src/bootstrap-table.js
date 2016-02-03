@@ -2465,6 +2465,7 @@
             rows = this.getSelections();
         }
         this.trigger(checked ? 'check-all' : 'uncheck-all', rows);
+        this.updateSelected();
     };
 
     BootstrapTable.prototype.check = function (index) {
